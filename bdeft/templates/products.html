@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+   
+<section class="heading-link">
+   <h3>Our products</h3>
+ 
+   <p>Digital transformation goes beyond the implementation of a solution. At Deft we offer you different services that complement and boost the technological deployment of your business. <span>How can we be of assitance?</span></p>
+</section>
+
+<section class="product">
+
+   <h1 class="heading"> Drive business digitisation with the right tools for your industry challenges </h1>
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="{% static 'images/finance.jpg' %}" alt="">
+            <h3>Finance and Banking</h3>
+         </div>
+         <div class="content">
+            <h3>Finance and operations Software</h3>
+            <p>With Microsoft Dynamics 365 for Finance and Operations you can create more efficient processes, deliver robust reporting and analytics, and ensure regulatory compliance across 34 countries, in 60 different languages.</p>
+            <a href="#" class="btn">read more</a>
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="{% static 'images/healthcare.jpg' %}" alt="">
+            <h3>Healthcare</h3>
+         </div>
+         <div class="content">
+            <h3>Hospital Management Solution</h3>
+            <p>Manage your facilities more efficiently, help increase sales, adapt to changing needs, and provide outstanding customer service by implementing the latest technology, tools, and innovation.</p>
+            <a href="#" class="btn">read more</a>
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="{% static 'images/disaster.jpg' %}" alt="">
+            <h3>Insurance</h3>
+         </div>
+         <div class="content">
+            <h3>Disaster Management Solution</h3>
+            <p>Analysis is the backbone for a business and this intelligence can support you with Modelling and Predictions with the combined benefit of Microsoft Excel integration. This can speed up your decision making, saving you costs.</p>
+            <a href="#" class="btn">read more</a>
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="{% static 'images/sacco.jpg' %}" alt="">
+            <h3>Finance and Banking</h3>
+         </div>
+         <div class="content">
+            <h3>SACCO Management Solution</h3>
+            <p>With Microsoft Dynamics 365 for Finance and Operations you can create more efficient processes, deliver robust reporting and analytics, and ensure regulatory compliance across 34 countries, in 60 different languages.</p>
+            <a href="#" class="btn">read more</a>
+           
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="{% static 'images/agriculture.jpg' %}" alt="">
+            <h3>Agriculuture</h3>
+         </div>
+         <div class="content">
+            <h3>Farm Management Solution</h3>
+            <p>Optimize your field service management. Organize people and equipment with flexible scheduling options to accommodate both customer service representative and dispatcher workflows</p>
+            <a href="#" class="btn">read more</a>
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="{% static 'images/hospitality.jpg' %}" alt="">
+            <h3>Hospitality</h3>
+         </div>
+         <div class="content">
+            <h3>Hospitality Management</h3>
+            <p>Personalize customer engagement and increase employee productivity by creating an exceptional, insightful vacationing experience that unifies digital, in-store, and back office operations.</p>
+            <a href="#" class="btn">read more</a>
+            
+         </div>
+      </div>
+
+      <div class="box hide">
+         <div class="image">
+            <img src="{% static 'images/customer.jpg' %}" alt="">
+            <h3>Customer Service</h3>
+         </div>
+         <div class="content">
+            <h3>Pension Administration Solution</h3>
+            <p>Creating a seamless customer experience starts with well connected tools. Unify your sales and marketing with Adobe Marketing Cloud and Dynamics 365 for a complete view of your customer. </p>
+            <a href="#" class="btn">read more</a>
+            
+         </div>
+      </div>
+
+      {% comment %} <div class="box-hide">
+         <div class="image">
+            <img src="{% static 'images/manufucturing.jpg' %}" alt="">
+            <h3>Manufacturing and Distribution</h3>
+         </div>
+         <div class="content">
+            <h3>Manufacturing and warehousing Solution</h3>
+            <p>Work with fully functional and updated inventory levels, giving a full idea of the resources and utilization. Master the process with this intelligence.</p>
+            <a href="#" class="btn">read more</a>
+            
+         </div>
+      </div> {% endcomment %}
+
+      <div class="box hide">
+         <div class="image">
+            <img src="{% static 'images/operations.jpg' %}" alt="">
+            <h3>Operations</h3>
+         </div>
+         <div class="content">
+            <h3>Fund Management Solution</h3>
+            <p>Work realtime from anywhere, with complete accessibility. This can enable you to track inflow and outflow and help you organize your sales force.</p>
+            <a href="#" class="btn">read more</a>
+            
+         </div>
+      </div>
+
+   </div>
+
+   <div class="load-more"> <div class="btn">load more</div> </div>
+
+</section>
+
+
+
+<section id="banner" class="section-p1 section-m1">
+   <div class="bannertext">
+     <h4>Ready to Schedule a demonstration?</h4>
+     <p>Just send us your questions we will give you the help you need.</p>
+   </div>
+   <div class="form">
+      <!-- will be used as a direct mail in future -->
+     <!-- <input type="text" placeholder="Enter email address" /> -->
+     {% comment %} <a href="./contact.html" class="btn">Contact Us Now</a> {% endcomment %}
+   </div>
+ </section>
+
+{% endblock %}

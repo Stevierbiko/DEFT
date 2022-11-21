@@ -1,0 +1,173 @@
+{% load bootstrap4 %}
+{% load static %} 
+<! DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Microsoft Dynamics 365 Consultants Jobs" name="keywords">
+    <meta name="description" content="Microsoft Gold Partner in Kenya, East Africa &amp; Africa. it provides Implementation,Training, Migration &amp; Support for D365 ERP, CRM, LS Retail &amp; IoT Services">
+    
+  {% if title %}
+  <title>DEFT - {{title}}</title>
+  {% else %}
+    <title> DEFT</title>
+  {% endif %}
+
+  {% block styles %}
+    {% bootstrap_css %}
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <!--Font awesome-->
+      {% comment %} <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> {% endcomment %}
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+      <!-- swiper css link  -->
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      
+   
+  {% endblock %}
+
+</head>
+<body>
+<header id='fnav'>
+  {% block fnav %}
+
+  <nav id="navbar_top" class="navbar sticky-top navbar-expand-lg ">
+      <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+  
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'products' %}">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Solutions
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Microsoft Office 365</a>
+                <a class="dropdown-item" href="#">Microsoft Dynamics 365</a>
+                <a class="dropdown-item" href="#">Microsoft Dynamics NAV</a>
+                <a class="dropdown-item" href="#">Microsoft Sharepoint</a>
+                <a class="dropdown-item" href="#">Microsoft Azure</a>
+                <a class="dropdown-item" href="#">Microsoft Dynamics CRM</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Industries
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Manufacturing</a>
+                <a class="dropdown-item" href="#">Education</a>
+                <a class="dropdown-item" href="#">Service based</a>
+                <a class="dropdown-item" href="#">Insurance</a>
+                <a class="dropdown-item" href="#">Retail and Commerce</a>
+                <a class="dropdown-item" href="#">Wholesale and Distribution</a>
+                <a class="dropdown-item" href="#">Pharmaceuticals</a>
+                <a class="dropdown-item" href="#">Hospitality</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'contact' %}">Contacts</a>
+          </li>
+        </ul>
+
+        
+<!-- logo -->
+        <a class="navbar-brand mx-auto"  href="#"><img src="{% static '/images/deft.png' %}" class='rounded center' alt="Logo" width="90" height="90" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+<!-- Address -->
+        <span class="span-inline my-2 my-lg-0">
+          <Address><i class="fa fa-map-marker" aria-hidden="true"></i>
+              Azure Towers , <br> &nbsp&nbsp&nbsp Westlands</Address>
+      
+        </span>
+      </div>
+    </nav>
+    {% endblock %}
+</header>
+<!-- End of header -->
+<br>
+<div id="content">
+  {% block content %}{% endblock %}
+</div>
+<br>
+<!-- footer -->
+<footer id="foot">
+  {% block foot %}
+  <section class="footer">
+
+      <div class="box-container">
+   
+         <div class="box">
+           <img src="{% static '/images/deft.png' %}" alt="logo" height="100px" width="100px">
+            <p>6th Floor, Azure Tower,Lantana Road,<br> Westlands</p>
+            <p>+254739711100</p>
+            <p>info@defttech.co.ke</p>
+            <div class="share">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+         </div>
+   
+         <div class="box">
+            <h3>quick links</h3>
+            <a href="{% url 'home' %}" class="link">Home</a>
+            <a href="{% url 'about' %}" class="link">About</a>
+            <a href="{% url 'contact' %}" class="link">Contact</a>
+         </div>
+   
+         <div class="box">
+            <h3>useful links</h3>
+            <a href="#" class="link">Help center</a>
+            <a href="#" class="link">Ask questions</a>
+            <a href="#" class="link">Send feedback</a>
+            <a href="#" class="link">Private policy</a>
+            <a href="#" class="link">Terms of use</a>
+         </div>
+   
+         <div class="box">
+            <h3>Our Newsletter</h3>
+            <p>Subscribe for the latest upadates</p>
+            <form action="">
+               <input type="email" name="" placeholder="enter your email" id="" class="email">
+               <input type="submit" value="subscribe" class="btn">
+            </form>
+         </div>
+   
+      </div>
+   
+      <div class="credit"> Created by <span>Steve Biko</span> | All rights reserved! </div>
+   
+   </section>
+   {% endblock %}
+</footer>
+
+<!-- End of footer -->
+{% block scripts %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+{% bootstrap_javascript %}
+{% endblock %}
+</body>
+</html>

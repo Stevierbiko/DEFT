@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+   
+<div class="card bg-dark text-white" >
+ <video autoplay="autoplay" controls="controls" preload="preload" height="799rem">
+    <source src="{% static 'images/nai.mp4' %}" type="video/mp4"></source>
+  </video> 
+   <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
+      
+      <p class="card-text">
+        <br>
+        <h2>Welcome to Deft Technologies,<br> a single integrated and secure platform for your business</h2>
+        <h3>At Deft we guarantee Security, flexibility and adaptability <br> from the largest software manufacturer; Microsoft solutions <br> a market-leading software br
+          that adapts to your needs.</h3>
+       </p>
+
+        <a class="btn btn-outline-info btn-lg" href="" >EXPLORE</a>
+  </div>
+</div>
+<br>
+<section class="logo-container">
+  <div class="swiper logo-slider">
+     <div class="swiper-wrapper">
+        <div class="swiper-slide"> <img src=" {% static 'images/azure.png' %}" alt=""> </div>
+        <div class="swiper-slide"> <img src="{% static 'images/gold.png' %}" alt=""> </div>
+        <div class="swiper-slide"> <img src="{% static 'images/office365.png' %}" alt=""> </div>
+        <div class="swiper-slide"> <img src="{% static 'images/oracle.png' %}" alt=""> </div>
+        <div class="swiper-slide"> <img src="{% static 'images/powerBI.png' %}" alt=""> </div>
+     </div>
+  </div>
+</section>
+<br><br>
+  <div class="container-fluid" style='height: 700px'><br><br>
+      <h3 class=' heading text-center'>Microsoft Cloud Solutions Gold Partner</h3>
+     <br><div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-3"><br>
+        <h2 class='conmarket'>Digital transformation with Microsoft</h2>
+      </div>
+      <div style="border-left: 3px solid maroon; height: 125px;"></div>
+      <div class="col-md-3 marketi"  >
+        <p>Security, flexibility and guarantee from the largest software manufacturer</p>
+
+        <p>Market-leading software that adapts to your needs</p>
+
+        <p>Quick to implement</p>
+      </div>
+      <div class="col-md-3">
+  </div>
+</div>
+<br><br><br>
+<section class="product">
+  <div class="box-container">
+        <div class="box">
+          <div class="image">
+          <div class="homemg">
+             <img src="{% static 'images/rectangle2.png' %}" alt="Person3">  
+           <h2>SOLUTIONS ERP</h2> <br>
+            <h4 ><a href="{% url 'products' %}" class="btn">More</a>
+            </h4>
+           
+          </div>
+        </div>
+      </div>
+        
+        <div class="box">
+          <div class="image">
+          <div class="homemg2">
+                <img src="{% static 'images/rectangle.png' %}" alt="Person3"  >
+                <h2>ClOUD SERVICES <br></h2>
+               <h4> <a href="{% url 'products' %}" class="btn">More</a>
+               </h4>
+         </div>
+        </div>
+      </div>
+   </div>
+  
+ 
+</section>
+  <br><br>  
+  <br>
+  <div class="container-fluid ">
+    <div
+          id="intro-example"
+          class="p-5 text-center bg-image"
+          style="background-image: url('/static/images/home.jpg'); height:700px"
+        >
+    <div class="row backimg">
+      <div class="col-md-3"></div>
+      <div class="col-md-3"><br>
+        <h1>A single integrated <br> and secure platform <br>
+        for your company</h1>
+      </div>
+      <div style="border-left: 3px solid maroon; height: 180px;"></div>
+      <div class="col-md-3">
+        <br><h2> We guarantee success in the <br> digitization of processes with <br> the 
+        Microsoft CLOUD Platform</h2>
+      </div>
+      <div class="col-md-3">
+    </div>
+  <div class="container-fluid center proc">
+    <img src="{% static 'images/process.png' %}" alt="Person3"> 
+       
+  </div>
+</div> 
+  </div>
+<br><br>
+
+<div class="container">
+  
+    <div class=" slidet">
+      <h1 class='heading'><b>WHY TRUST DEFT?</b></h1><br>
+      <h4>SIMPLE INTEGRATION AND CUSTOMIZABILITY</h4>
+      <p>Using just a few lines of code, efficiently embed document capture, barcode recognition and information extraction in your web, desktop or mobile applications.
+      </p><br>
+      <h4>TRUSTED BY WORLD-CLASS ORGANIZATIONS</h4>
+      <p>Deft's solutions have been tried, tested and used by businesses across industries: finance, government, healthcare, technology and much more.
+      </p><br>
+      <h4>GREAT SUPPORT TEAM</h4>
+      <p>Deft's Consultants  guarantee the success of project for their customers .</p>
+    </div> 
+    
+
+
+  </div>
+
+
+<br>
+{% endblock %}

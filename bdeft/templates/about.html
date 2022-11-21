@@ -1,0 +1,286 @@
+{%extends 'index.html'%}
+{% load static %}
+{% block content %}
+<section class="heading-link">
+   <h3>About us</h3>
+   {% comment %} <p> <a href="index.html">home</a> / about </p> {% endcomment %}
+   <p>We Take Pride In Serving Organizations In Every Industry And Market Sector <br> With our constant endeavor, we have been skillfull in developing practices in serving enterprises with the best of our technical capabilities.</p>
+</section>
+
+
+<section class="about">
+
+   <div class="image">
+      <img src="{% static 'images/about.jpg' %}" alt="about-img">
+   </div>
+
+   <div class="content">
+      <h3 class="about-title">Who we are</h3>
+      <p>Deft Technologies was established with the client’s technological needs in mind. We seek to exceed client’s expectations by offering palatable solutions in line with the latest technologies and best practices. <br>
+        We are accredited Microsoft partners with years of experience in software development, implementation, consultancy, training, support and customization. <br>
+        We boast of a highly trained & qualified pool of developers and implementation staff that deliver top quality solutions within agreed time frames.</p>
+      <div class="icons-container">
+         <div class="icons">
+            {% comment %} <img src="{% static 'images/about-icon-1.png' %}" alt=""> {% endcomment %}
+            <h3>15+</h3>
+            <span>YEARS OF EXPERIENCE</span>
+         </div>
+         <div class="icons">
+            {% comment %} <img src="{% static 'images/about-icon-2.png' %}" alt=""> {% endcomment %}
+            <h3>20+</h3>
+            <span>CLIENTS</span>
+         </div>
+         <div class="icons">
+            {% comment %} <img src="{% static 'images/about-icon-3.png' %}" alt=""> {% endcomment %}
+            <h3>25+</h3>
+            <span>TECH TEAM</span>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- Team section starts  -->
+
+ {% comment %} <section class="team">
+
+    <h1 class="heading">Meet Deft Executive Team</h1>
+      <div class="swiper team-slider">
+      <div class="swiper-wrapper">
+        
+               <div class="swiper-slide slide"> 
+                  <div class="image">
+                     <img src="{% static 'images/pic-1.png' %}" alt="Erick">
+                     <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                     </div>
+                  </div>
+              
+                   <div class="content">
+                     <h3>Erick Mwangi</h3>
+                     <span>Sales Director</span>
+                  </div>
+               </div>
+               <div class="swiper-slide slide">
+                  <div class="image">
+                        <img src="{% static 'images/pic-1.png' %}" alt="kelvin">
+                        <div class="share">
+                           <a href="#" class="fab fa-facebook-f"></a>
+                           <a href="#" class="fab fa-twitter"></a>
+                           <a href="#" class="fab fa-instagram"></a>
+                           <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                  </div>
+                  <div class="content">
+                      <h3>Kelvin</h3>
+                     <span>Operations Director</span>
+                  </div>
+               </div>
+           
+               <div class="swiper-slide slide">
+                  <div class="image">
+                     <img src="{% static 'images/pic-1.png' %}" alt="Person3">
+                     <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                     </div>
+                  </div>
+                  <div class="content">
+                     <h3>john deo</h3>
+                     <span>CTO</span>
+                  </div>
+               </div>
+      </div>
+   </div>      
+</div>
+</div>
+</div>
+</div>
+</section>   {% endcomment %}
+
+<section class="industry-section" >
+
+   <h1 class="heading"> Industries we serve </h1>
+
+   <div class="swiper industry-section-slider">
+
+      <div class="swiper-wrapper">
+         
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'images/manufucturing.jpg' %}" alt="">
+               <h3>Manufacturing</h3>
+            </div>
+            <div class="content">
+               <h3>ERP FOR MANUFACTURING INDUSTRY</h3>
+               <p>Microsoft Dynamics 365 for Manufacturers is a best-in-class software for manufacturers that combines CRM and ERP systems with powerful business applications and industry-specific add-ons.</p>
+               <a href="{% url 'products' %}" class="btn">Read more</a>
+            </div>
+         </div>
+    
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'images/construction.jpg' %}" alt="">
+               <h3>Construction</h3>
+            </div>
+            <div class="content">
+               <h3>Management software for construction companies</h3>
+               <p>A platform that integrates ERP, CRM, Power BI and Microsoft document management for the construction sector.</p>
+               <a href="{% url 'products' %}" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'images/realestate.jpg' %}" alt="">
+               <h3>Real Estate</h3>
+            </div>
+            <div class="content">
+               <h3>Software for real estate and promoters</h3>
+               <p>A Microsoft tool to optimize the processes of real estate companies
+                  crms | ERP | business intelligence</p>
+               <a href="{% url 'products' %}" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'images/education.jpg' %}" alt="">
+               <h3>Education Sector</h3>
+            </div>
+            <div class="content">
+               <h3>software for schools</h3>
+               <p>A software oriented to educational centres that allows the control of the academic, economic, administrative and methodological management. It adapts to kindergartens, schools, universities and business schools.</p>
+               <a href="{% url 'products' %}" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'images/lawfirm.jpg' %}" alt="">
+               <h3>Law firms</h3>
+            </div>
+            <div class="content">
+               <h3>software for law firms</h3>
+               <p>hat allows you to manage all the processes of a law firm in a simple and agile way. It optimises current processes and guarantees the coverage of future needs, accompanying the strategic growth of the firm. For example, the creation of new legal areas, lines of business, internationalisation, etc.</p>
+               <a href="{% url 'products' %}" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'images/ecommerce.jpg' %}" alt="">
+               <h3>Ecommerce + ERP</h3>
+            </div>
+            <div class="content">
+               <h3>eCommerce platform for Microsoft Dynamics ERP</h3>
+               <p>A very intuitive and quick to implement Microsoft Omni-Channel solution, With the online ERP Microsoft Dynamics 365 Business Central it is possible to manage the entire financial and accounting process with data that is updated in real time.</p>
+               <a href="{% url 'products' %}" class="btn">read more</a>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
+   </div>
+
+</section>
+<!-- Client reviews section starts  -->
+
+<section class="reviews">
+
+   <h1 class="heading"> our Clients review </h1>
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <p>I would like to say a special thank you and your team for provided us the excellent services. We got the best support and services from “Deft Technologies” with reasonable price.</p>
+            <img src="{% static 'images/pic-1.png' %}" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>We are very impressed with the service you provided us. We desire to work with you again. We would recommend it to everyone and would always look up to working with you. Thanks a lot for all!
+
+            </p>
+            <img src="{% static 'images/pic-1.png' %}" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Wonderful job. Our Project was delivered on time with a tight deadline. Great provider as always. Thanks to "Deft Technologies" for the great job.</p>
+            <img src="{% static 'images/pic-1.png' %}" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>We really love the program and we use it here daily. It is definitely one of the best time-saving Web Application and 100% paper less system. We have purchased in a very long time and we are fully satisfied.</p>
+            <img src="{% static 'images/pic-1.png' %}" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- clients reviews section ends -->
+
+<!-- Brand logo slider starts  -->
+
+<section class="logo-container">
+   <h1>Our Clients and Partners</h1>
+   <div class="swiper logo-slider">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide"> <img src="{% static 'images/redstor.png' %}" alt=""> </div>
+         <div class="swiper-slide"> <img src="{% static 'images/microsoft.png' %}" alt=""> </div>
+         <div class="swiper-slide"> <img src="{% static 'images/stabex.png' %}" alt=""> </div>
+         <div class="swiper-slide"> <img src="{% static 'images/perfometer.png' %}" alt=""> </div>
+         <div class="swiper-slide"> <img src="{% static 'images/driffield.png' %}" alt=""> </div>
+         <div class="swiper-slide"> <img src="{% static 'images/cpf.png' %}" alt=""> </div>
+         <div class="swiper-slide"> <img src="{% static 'images/leisuretimelogo.png' %}" alt=""> </div>
+         <div class="swiper-slide"> <img src="{% static 'images/Veeam_logo.png' %}" alt=""> </div>
+         <div class="swiper-slide"> <img src="{% static 'images/jet.png' %}" alt=""> </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}
