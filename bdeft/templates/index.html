@@ -1,22 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-   
-<div class="card bg-dark text-white" >
- <video autoplay="autoplay" controls="controls" preload="preload" height="799rem">
-    <source src="{% static 'images/nai.mp4' %}" type="video/mp4"></source>
-  </video> 
-   <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
-      
-      <p class="card-text">
+
+<div class="card" >
+
+  {% comment %} <div id="intro-example" class="p-5 bg-image"
+  style="background-image: url('/static/images/home.jpg'); height:790px" >
+    {% endcomment %}
+   <div class="card-img-overlay" >
+      <p class="card-text ">
         <br>
-        <h2>Welcome to Deft Technologies,<br> a single integrated and secure platform for your business</h2>
+        <h1 >Welcome to Deft Technologies</h1>
+        <h3><br>A single integrated and secure platform for your business</h1>
         <h3>At Deft we guarantee Security, flexibility and adaptability <br> from the largest software manufacturer; Microsoft solutions <br> a market-leading software br
           that adapts to your needs.</h3>
        </p>
 
         <a class="btn btn-outline-info btn-lg" href="" >EXPLORE</a>
   </div>
+</div>
 </div>
 <br>
 <section class="logo-container">
@@ -30,7 +32,7 @@
      </div>
   </div>
 </section>
-<br><br>
+<br>
   <div class="container-fluid" style='height: 700px'><br><br>
       <h3 class=' heading text-center'>Microsoft Cloud Solutions Gold Partner</h3>
      <br><div class="row">
@@ -49,13 +51,13 @@
       <div class="col-md-3">
   </div>
 </div>
-<br><br><br>
+<br><br>
 <section class="product">
   <div class="box-container">
         <div class="box">
           <div class="image">
           <div class="homemg">
-             <img src="{% static 'images/rectangle2.png' %}" alt="Person3">  
+             <img src="{% static 'images/rectangle2.png' %}" alt="Boardemail">  
            <h2>SOLUTIONS ERP</h2> <br>
             <h4 ><a href="{% url 'products' %}" class="btn">More</a>
             </h4>
@@ -75,17 +77,11 @@
         </div>
       </div>
    </div>
-  
- 
 </section>
-  <br><br>  
+
   <br>
   <div class="container-fluid ">
-    <div
-          id="intro-example"
-          class="p-5 text-center bg-image"
-          style="background-image: url('/static/images/home.jpg'); height:700px"
-        >
+ 
     <div class="row backimg">
       <div class="col-md-3"></div>
       <div class="col-md-3"><br>
@@ -100,11 +96,11 @@
       <div class="col-md-3">
     </div>
   <div class="container-fluid center proc">
-    <img src="{% static 'images/process.png' %}" alt="Person3"> 
+    <img src="{% static 'images/process.png' %}" alt="Process"> 
        
   </div>
 </div> 
-  </div>
+  
 <br><br>
 
 <div class="container">

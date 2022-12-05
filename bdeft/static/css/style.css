@@ -62,14 +62,6 @@ html::-webkit-scrollbar-thumb {
 section {
   padding: 5rem 10%;
 }
-/* #contact{
-  background-color: #fef9e6;
-  background-size: cover;
-  font-size: 4rem;
-  height: 80;
-  text-align: center;
-
-} */
 
 .heading-link {
   text-align: center;
@@ -176,15 +168,13 @@ section {
 }
 /* slidein index */
 .backimg{
-  color: #eee;
   font-size: 4em;
 }
 .backimg h2{
   margin-right: 100px;
 }
 
-
-
+/* slide in why deft */
 .slidet{
 	font-family: 'arial black';
 	font-size: 20px;
@@ -212,8 +202,6 @@ section {
 		transform: translateX(-50%);
 	}
 }
-
-
 
 .marketi{
   font-size: 1.5rem;
@@ -434,6 +422,7 @@ section {
   color: #eee;
 
 }
+/* homepage */
 
 .homemg{
  width: 400px;
@@ -465,7 +454,7 @@ section {
   
 .homemg2{
   width: 400px;
-  height: 200px;
+  height: 280px;
   margin-right: 300px;
   z-index: 1;
   opacity: 0.5;
