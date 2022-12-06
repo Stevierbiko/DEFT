@@ -1,26 +1,25 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-
-<div class="card" >
-
-  {% comment %} <div id="intro-example" class="p-5 bg-image"
-  style="background-image: url('/static/images/home.jpg'); height:790px" >
-    {% endcomment %}
-   <div class="card-img-overlay" >
-      <p class="card-text ">
-        <br>
-        <h1 >Welcome to Deft Technologies</h1>
-        <h3><br>A single integrated and secure platform for your business</h1>
-        <h3>At Deft we guarantee Security, flexibility and adaptability <br> from the largest software manufacturer; Microsoft solutions <br> a market-leading software br
-          that adapts to your needs.</h3>
-       </p>
-
-        <a class="btn btn-outline-info btn-lg" href="" >EXPLORE</a>
-  </div>
-</div>
-</div>
+{% comment %} section starts {% endcomment %}
+ <div class="card" >
+    <div id="intro-example" class="p-5 bg-image"
+     style="background-image: url('/static/images/home.jpg'); height:790px" >
+      
+      <div class="card-img-overlay text-white " >
+         <div class="card-text " style='margin-top:20rem; padding:5rem;'>
+           <h1 class="font-weight-bold">Welcome to Deft Technologies</h1>
+           <h2><br>A single integrated and secure platform for your business.</h1>
+           <h2>At Deft we guarantee Security, flexibility and adaptability <br> from the largest software manufacturer; Microsoft solutions <br> a market-leading software br
+             that adapts to your needs.</h2>
+           <a class="btn btn-outline-info btn-lg" href="" >EXPLORE</a>
+         </div> 
+       </div>
+     </div>  
+   </div>
+{% comment %} section ends {% endcomment %}
 <br>
+{% comment %} logo start {% endcomment %}
 <section class="logo-container">
   <div class="swiper logo-slider">
      <div class="swiper-wrapper">
@@ -32,95 +31,79 @@
      </div>
   </div>
 </section>
-<br>
-  <div class="container-fluid" style='height: 700px'><br><br>
-      <h3 class=' heading text-center'>Microsoft Cloud Solutions Gold Partner</h3>
-     <br><div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-3"><br>
-        <h2 class='conmarket'>Digital transformation with Microsoft</h2>
-      </div>
-      <div style="border-left: 3px solid maroon; height: 125px;"></div>
-      <div class="col-md-3 marketi"  >
-        <p>Security, flexibility and guarantee from the largest software manufacturer</p>
+{% comment %} logo end {% endcomment %}
 
-        <p>Market-leading software that adapts to your needs</p>
-
-        <p>Quick to implement</p>
-      </div>
-      <div class="col-md-3">
-  </div>
+    <h3 class=' heading text-center'>Microsoft Cloud Solutions Gold Partner</h3>
+    
+    <div class="container justify-center">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4"><br>
+            <h2 class='conmarket'>Digital transformation <br>with Microsoft</h2>
+        </div>
+        <div style="border-left: 3px solid maroon; height: 125px;"></div>
+          <div class="col-md-5 marketi"  >
+            <p>Security, flexibility and guarantee from the largest software manufacturer</p>
+            <p>Market-leading software that adapts to your needs</p>
+            <p>Quick to implement</p>
+          </div>
+    </div>
 </div>
-<br><br>
+{% comment %} Start of pics {% endcomment %}
 <section class="product">
   <div class="box-container">
         <div class="box">
           <div class="image">
-          <div class="homemg">
+            <div class="homemg">
              <img src="{% static 'images/rectangle2.png' %}" alt="Boardemail">  
-           <h2>SOLUTIONS ERP</h2> <br>
+            <h2>SOLUTIONS ERP</h2> <br>
             <h4 ><a href="{% url 'products' %}" class="btn">More</a>
-            </h4>
-           
-          </div>
+            </h4>        
+            </div>
+         </div>
         </div>
-      </div>
         
         <div class="box">
           <div class="image">
-          <div class="homemg2">
-                <img src="{% static 'images/rectangle.png' %}" alt="Person3"  >
+            <div class="homemg2">
+                <img src="{% static 'images/rectangle.png' %}" alt="Person3" style='height:220px;' >
                 <h2>ClOUD SERVICES <br></h2>
                <h4> <a href="{% url 'products' %}" class="btn">More</a>
                </h4>
-         </div>
-        </div>
-      </div>
-   </div>
+           </div>
+          </div>
+        </div>     
+  </div> 
 </section>
-
-  <br>
-  <div class="container-fluid ">
- 
-    <div class="row backimg">
-      <div class="col-md-3"></div>
-      <div class="col-md-3"><br>
-        <h1>A single integrated <br> and secure platform <br>
-        for your company</h1>
-      </div>
-      <div style="border-left: 3px solid maroon; height: 180px;"></div>
-      <div class="col-md-3">
-        <br><h2> We guarantee success in the <br> digitization of processes with <br> the 
-        Microsoft CLOUD Platform</h2>
-      </div>
-      <div class="col-md-3">
+{% comment %} section end {% endcomment %}
+<div class="container justify-center ">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4 ">
+      <br><h2>A single integrated and secure platform
+      for your company</h2>
     </div>
-  <div class="container-fluid center proc">
-    <img src="{% static 'images/process.png' %}" alt="Process"> 
-       
+    <div style="border-left: 3px solid maroon; height: 130px; "></div>
+    <div class="col-md-5">
+      <br><h3> We guarantee success in the <br> digitization of processes with <br> the 
+      Microsoft Cloud Platform</h3>
+    </div>
   </div>
-</div> 
-  
-<br><br>
+</div>
+<br>
+<div class="container-fluid ">
+  <img class="procimg" src="/static/images/proc.jpg" alt="Process">      
+</div>  
+  <br><br>
 
-<div class="container">
+<div class="container" style=' font-size: 1.5rem;'>
   
-    <div class=" slidet">
-      <h1 class='heading'><b>WHY TRUST DEFT?</b></h1><br>
-      <h4>SIMPLE INTEGRATION AND CUSTOMIZABILITY</h4>
-      <p>Using just a few lines of code, efficiently embed document capture, barcode recognition and information extraction in your web, desktop or mobile applications.
-      </p><br>
-      <h4>TRUSTED BY WORLD-CLASS ORGANIZATIONS</h4>
-      <p>Deft's solutions have been tried, tested and used by businesses across industries: finance, government, healthcare, technology and much more.
-      </p><br>
-      <h4>GREAT SUPPORT TEAM</h4>
-      <p>Deft's Consultants  guarantee the success of project for their customers .</p>
+      <h1><b>Why choose Microsoft Dynamics Business Central?</b></h1><br>
+      <p> Dynamics 365 Business Central is a comprehensive Enterprise Resource Planning Solution that was created with the large and SME <br> business   operations in mind. It includes a wide range of corporate functions as well as the added benefit of cloud computing.</p>
+      <p>It is built with a variety of cloud services, including Power Aps, Sharepoint, Outlook, Office 365, Power BI and Flow.</p>
+      <p>The solution is fast, scalable, secure, comes with an option of cloud hosting or on prem and be integrated with other solutions.</p>
     </div> 
     
 
 
-  </div>
-
-
-<br>
 {% endblock %}

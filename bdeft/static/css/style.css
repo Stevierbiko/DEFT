@@ -166,13 +166,7 @@ section {
   font-size: 2.5rem;
   text-align: right;
 }
-/* slidein index */
-.backimg{
-  font-size: 4em;
-}
-.backimg h2{
-  margin-right: 100px;
-}
+
 
 /* slide in why deft */
 .slidet{
@@ -212,7 +206,7 @@ section {
   height:35% ;
 }
 .logo-container .swiper-wrapper{
-  height: 6%;
+  height: 12%;
 }
 
 .header .navbar #close-navbar:hover {
@@ -425,9 +419,6 @@ section {
 /* homepage */
 
 .homemg{
- width: 400px;
- height: 220px;
- margin-left: 300px;
  opacity: 0.5;
  
 }
@@ -454,7 +445,6 @@ section {
   
 .homemg2{
   width: 400px;
-  height: 280px;
   margin-right: 300px;
   z-index: 1;
   opacity: 0.5;
@@ -635,7 +625,7 @@ section {
 }
 
   /* banner section starts */
-  #banner{
+  /* #banner{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -647,7 +637,7 @@ section {
   /* #banner .form{
     display: flex;
     width: 40%;
-  } */
+  } */ */
   #banner h4{
     font-size: 30px;
     color: #fff;
@@ -675,6 +665,14 @@ section {
     text-transform: capitalize;
     color: #444;
   }
+  h1{
+    font-weight: bolder;
+  }
+  .card-text{
+  font-weight: 900;
+  color: rgb(189, 25, 25);
+  }
+
 .logo-container {
   text-align: center;
 }
