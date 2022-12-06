@@ -167,36 +167,6 @@ section {
   text-align: right;
 }
 
-
-/* slide in why deft */
-.slidet{
-	font-family: 'arial black';
-	font-size: 20px;
-	text-align: left;
-	padding: 0;
-	margin: 0;
-	margin-left: 25%;
-	transform: translateX(-200%);
-	opacity: 0;
-	animation: slide-in-anim 1.5s ease-out forwards;
-}
-
-@keyframes slide-in-anim {
-	20% {
-		opacity: 0;
-	}
-	60% {
-		transform: translateX(-45%);
-	}
-	75% {
-		transform: translateX(-52%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(-50%);
-	}
-}
-
 .marketi{
   font-size: 1.5rem;
   margin-left: 5px;
@@ -420,7 +390,9 @@ section {
 
 .homemg{
  opacity: 0.5;
- 
+ width: 400px;
+ margin-left: 300px;
+ height:220px;
 }
 .homemg:hover {
   opacity: 1.0;
@@ -445,6 +417,7 @@ section {
   
 .homemg2{
   width: 400px;
+  height:220px;
   margin-right: 300px;
   z-index: 1;
   opacity: 0.5;
@@ -670,7 +643,9 @@ section {
   }
   .card-text{
   font-weight: 900;
-  color: rgb(189, 25, 25);
+  margin-top:20rem; 
+  padding:5rem;
+  
   }
 
 .logo-container {
@@ -678,13 +653,12 @@ section {
 }
 
 .logo-container img {
-  height: 5rem;
+  height: 8rem;
   pointer-events: none;
 }
 
 
 /* Contact section Starts */
-
 
 .contact .icons-container {
   margin-bottom: 3rem;
