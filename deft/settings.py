@@ -136,5 +136,5 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DEFAULT_FROM_EMAIL = "nimz69509@gmail.com"
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# DEFAULT_FROM_EMAIL = "nimz69509@gmail.com"
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
